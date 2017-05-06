@@ -7,6 +7,13 @@ Idea we will attempt to build an accurate classifier that will analyze the senti
 * Kiki
 * Sam
 
+# Current Code/Files
+* transformData.py
+  * transform the movies.txt data format into the single line format we can use in RDD's in spark
+* Analysis_Notebook.ipynb
+* tiniest_movies.txt - truncated file of our data for testing function correctness and "bug-freeness"
+* output.txt - sample output from transformData using tiniest_movies
+  * this is used in Analysis_Notebook for now
 
 # TO DO LIST 
 * Clean Data [ ] 
