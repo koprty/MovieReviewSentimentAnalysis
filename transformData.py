@@ -20,7 +20,7 @@ def outputRDD_readable(filename):
     maxE = 8
     #initializing first line to have all the headers just for clarity
     #TODO: remove as needed
-    str = "productId///userId///profileName///helpfulness///score///time///summary///text\n" 
+    str = "" #"productId///userId///profileName///helpfulness///score///time///summary///text\n" 
     for line in data: # check each line
         if (len(line.split()) > 0):# if empty, dont do anything
             L.append(" ".join(line.split(" ")[1:]).strip()) #get rid of preceding category descriptions
