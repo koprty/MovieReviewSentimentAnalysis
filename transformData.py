@@ -20,18 +20,18 @@ def outputRDD_readable(filename):
     maxE = 8
     #initializing first line to have all the headers just for clarity
     #TODO: remove as needed
-    str = "" #"productId///userId///profileName///helpfulness///score///time///summary///text\n" 
+    str_ans = "" #"productId///userId///profileName///helpfulness///score///time///summary///text\n" 
     for line in data: # check each line
         if (len(line.split()) > 0):# if empty, dont do anything
             L.append(" ".join(line.split(" ")[1:]).strip()) #get rid of preceding category descriptions
         
             if (len(L) == maxE): #clear temp holder after adding to things string to print
-                str+= "///".join(L)
-                str+= "\n"
+                str_ans+= "///".join(L)
+                str_ans+= "\n"
                 L=[]
-    print str.strip()
+    print "\n".join(str_ans.split("\n")[:-2]) # remove last  two elements just because they might be flawed data
+    # text files on my local machine are very poorly cut... using the head command lolz
 
-
-
-#outputRDD_readable("smaller_movies.txt");
-outputRDD_readable("tiniest_movies.txt");
+#outputRDD_readable("movies.txt");
+outputRDD_readable("smaller_movies.txt");
+#outputRDD_readable("tiniest_movies.txt");
