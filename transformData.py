@@ -33,5 +33,7 @@ def outputRDD_readable(filename):
     # text files on my local machine are very poorly cut... using the head command lolz
 
 #outputRDD_readable("movies.txt");
-outputRDD_readable("smaller_movies.txt");
-#outputRDD_readable("tiniest_movies.txt");
+#outputRDD_readable("smaller_movies.txt");
+#outputRDD_readable("50k_parsed.txt");
+#outputRDD_readable("100k_parsed.txt");
+outputRDD_readable("tiniest_movies.txt");
