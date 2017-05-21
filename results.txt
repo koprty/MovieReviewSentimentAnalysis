@@ -1,0 +1,46 @@
+num Features = 200 for all data quantities
+We used three different numbers to test what quantity of data would be the most accurate in creating the classifiers
+
+The prediction data was tested on a data set of 10k points
+
+
+---------------------------------------------------------------
+6k - trained with 6k*.7 datapoints - num Features:200
+---------------------------------------------------------------
+Training Accuracies:  (accuracy of testing set)
+SVM: SVM model: 84.997 (with testing sets)
+Log: Log Testing Accuracy: 84.292%
+Bayes: Naive Bayes Testing Accuracy: 85.145%
+-----------------------------------------------
+Prediction Test Accuracies:
+SVM  Prediction Accuracy: 84.290%
+Log Regression  Prediction Accuracy: 84.280%
+Bayes Prediction Accuracy: 85.880%
+
+
+---------------------------------------------------------------
+50k ~ trained with 49994 *.7 datapoints - num Features 200
+---------------------------------------------------------------
+Training Accuracies:  (accuracy of testing set)
+SVM: testing accuracy of the SVM model: 85.708%
+Log:Log Testing Accuracy: 84.816%
+Bayes: Naive Bayes Testing Accuracy: 84.779%
+-----------------------------------------------
+Prediction Test Accuracies:
+SVM  Prediction Accuracy: 87.100%
+Log Regression  Prediction Accuracy: 86.490%
+Bayes Prediction Accuracy: 86.490%
+
+
+---------------------------------------------------------------
+100k - trained with 10k*.7 datapoints - num Features 200
+---------------------------------------------------------------
+Training Accuracies:  (accuracy of testing set)
+SVM: testing accuracy of the SVM model: 85.435
+Log: Log Testing Accuracy: 84.772%
+Bayes: Naive Bayes Testing Accuracy: 84.251%
+-----------------------------------------------
+Prediction Test Accuracies:
+SVM  Prediction Accuracy: 87.050%
+Log Regression  Prediction Accuracy: 86.400%
+Bayes Prediction Accuracy: 86.370%
