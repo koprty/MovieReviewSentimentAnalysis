@@ -28,7 +28,7 @@ Goal: An accurate classifier that will analyze the sentiment of the movie (posit
 * NOTE: All large data files have been removed due to GitHub file limits
 * output.txt and 6k_parsed.txt are examples of the result from transformData.py on the snap data formats
 
-# Technologies to Use
+## Technologies Used
 * Spark 
 * Python 
 * pyspark.mllib library/module
@@ -39,6 +39,9 @@ Goal: An accurate classifier that will analyze the sentiment of the movie (posit
 * Use a more powerful machine to run and test on more data
 * Parameter Optimization
 * Individual words to different sentiment scores instead of classifying all words in one review to one score
+
+## Thanks
+* Feel free to contact us with any suggestions and comments
 
 
 
