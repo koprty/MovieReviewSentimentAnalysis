@@ -23,7 +23,7 @@ def outputRDD_readable(filename):
     str_ans = "" #"productId///userId///profileName///helpfulness///score///time///summary///text\n" 
     for line in data: # check each line
         if (len(line.split()) > 0):# if empty, dont do anything
-            L.append(" ".join(line.split(" ")[1:]).strip()) #get rid of preceding category descriptions
+            L.append(" ".join(line.replace("\n"," ").split(" ")[1:]).strip()) #get rid of preceding category descriptions
         
             if (len(L) == maxE): #clear temp holder after adding to things string to print
                 str_ans+= "///".join(L)
@@ -36,4 +36,5 @@ def outputRDD_readable(filename):
 #outputRDD_readable("smaller_movies.txt");
 #outputRDD_readable("50k_parsed.txt");
 #outputRDD_readable("100k_parsed.txt");
-outputRDD_readable("tiniest_movies.txt");
+#outputRDD_readable("tiniest_movies.txt");
+outputRDD_readable("prediction_data.txt");
